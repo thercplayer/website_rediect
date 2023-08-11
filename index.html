@@ -2,21 +2,20 @@
 <div>
   <button id="button" type="button"
           onclick="window.open('http://www.google.com', '_self')" hidden>My Button</button>
-
-  <br /><br />
-  <button onclick="toggle();">Toggle hidden</button>
 </div>
 
 <script>
-  let toggle = () => {
-
-    let element = document.getElementById("button");
-    let hidden = element.getAttribute("hidden");
-
-    if (hidden) {
-       element.removeAttribute("hidden");
-    } else {
-       element.setAttribute("hidden", "hidden");
-    }
+    var pw = "rcpisthebest2";
+  
+    function authenticate(){
+      let element = document.getElementById("button");
+      pwenter = prompt("Enter Password:")
+      
+      if (pwenter == pw) {
+        element.setAttribute("hidden", "hidden");
+        element.removeAttribute("hidden");
+      }
   }
+
+  window.onload = authenticate;
 </script>
