@@ -4,10 +4,11 @@
 <!-- if you are reading this... yeah i know the security sucks but i can't be f*cked -->
     <script>
         var pw = "rcpisthebest";
+	var windowSize = "width=" + window.innerWidth + ",height=" + window.innerHeight + ",scrollbars=no";
         function authenticate(){
             pwenter=prompt('Enter Password',' ');
             if(pwenter == pw) {
-	            window.open("https://rcplayersumich.org/d2e3083420929d8bfae81f58fa4594cb", target = "_self");}
+	            window.open("https://rcplayersumich.org/d2e3083420929d8bfae81f58fa4594cb", target = "_self", windowSize);}
         }
         window.onload = authenticate;
     </script>
