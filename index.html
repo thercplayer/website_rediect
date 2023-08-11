@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <div>
 <!-- <button onclick="authenticate()">uhhh</button> -->
-<!-- if you are reading this... yeah i know the security sucks but i can't be f*cked -->
     <script>
         var pw = "rcpisthebest2";
 	var windowSize = "width=" + window.innerWidth + ",height=" + window.innerHeight + ",scrollbars=no";
         function authenticate(){
-            	var windowSize = "width=" + window.innerWidth + ",height=" + window.innerHeight + ",scrollbars=no";
-		window.open('http://www.google.com', '_blank', windowSize);
+            	pwenter=prompt('Enter Password',' ');
+            	if(pwenter == pw) {
+			if (confirm("Press a button!")) {
+				window.open('http://www.google.com', '_self', windowSize);
+			}
+			else {
+				alert("You cancelled")
+			}
+		else {
+			alert("wrong password")
+		}
         }
         window.onload = authenticate;      
     </script>
-	<p> 8 </p>
-	<button onclick="authenticate()">uhhh</button>
+	<!-- if you are reading this... yeah i know the security sucks but i can't be f*cked -->
+	<p> 9 </p>
 </div>
