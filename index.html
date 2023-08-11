@@ -1,8 +1,28 @@
 <!DOCTYPE html>
-<div>
-  <button id="button" type="button"
+<head>
+<style>
+.container { 
+  height: 200px;
+  position: relative;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+
+<div class="container">
+  <div class="center">
+    <button id="button" type="button"
           onclick="window.open('https://rcplayersumich.org/d2e3083420929d8bfae81f58fa4594cb', '_self')" hidden><img src="./clickme.png"></button>
-</div>
+  </div>
+</div>  
 
 <script>
     var pw = "rcpisthebest2";
